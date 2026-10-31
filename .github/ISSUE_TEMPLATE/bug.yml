@@ -1,0 +1,32 @@
+name: Problema
+description: Algo não funcionou como deveria
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "**Não anexe faturas, extratos, prints ou bancos de dados com dados reais.** Troque nomes e valores por exemplos."
+  - type: input
+    id: version
+    attributes:
+      label: Versão
+      description: Aparece no fim da tela Ajustes
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema
+      options: [Windows, macOS, Linux, Rodando do código]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: O que aconteceu e o que você esperava
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meus Gastos · Finanças</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/app.css?v=20">
+<script type="module" src="/js/main.js"></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar" aria-label="Navegação principal">
+    <a class="brand" href="/" data-link>
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>meus gastos<small>finanças pessoais</small></span>
+    </a>
+    <nav id="nav"></nav>
+    <div class="sidebar-foot">
+      <div class="local-badge"><span class="pulse" aria-hidden="true"></span>100% local · sem conexão com bancos</div>
+      <button class="ghost small" id="lock-now" type="button" hidden>Bloquear</button>
+      <button class="ghost small" id="quit-app" type="button">Encerrar</button>
+      <button class="ghost small" id="theme-toggle" type="button">Tema</button>
+    </div>
+  </aside>
+  <div class="content">
+    <header class="topbar" id="topbar"></header>
+    <main id="app" tabindex="-1"></main>
+  </div>
+</div>
+<nav class="tabbar" id="tabbar" aria-label="Navegação"></nav>
+<div id="toasts" aria-live="polite"></div>
+<div id="tooltip" role="tooltip" hidden></div>
+</body>
+</html>

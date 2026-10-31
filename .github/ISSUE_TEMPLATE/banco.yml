@@ -1,0 +1,30 @@
+name: Banco ou formato não reconhecido
+description: Peça suporte a um novo banco ou layout
+labels: [importador]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Para adicionar um banco precisamos da **estrutura** do arquivo, nunca dos seus dados.
+        Abra o CSV num editor de texto (ou copie o texto do PDF), troque nomes, valores, cartões e CPF por exemplos inventados e cole abaixo.
+  - type: input
+    id: bank
+    attributes:
+      label: Banco
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Tipo de arquivo
+      options: [Fatura do cartão em PDF, Fatura do cartão em CSV/OFX, Extrato da conta em PDF, Extrato da conta em CSV/OFX, Outro]
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Exemplo anonimizado do conteúdo
+      description: Cabeçalhos e 3 a 5 linhas com dados inventados
+      render: text
+    validations:
+      required: true

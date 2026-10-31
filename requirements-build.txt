@@ -1,0 +1,4 @@
+pypdf==6.19.0
+cryptography==44.0.3
+pyinstaller==6.11.1
+pyinstaller-hooks-contrib==2026.9

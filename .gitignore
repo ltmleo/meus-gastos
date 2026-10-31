@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+.claude/
+
+# Financial data never goes to version control.
+data/*
+!data/.gitkeep
+faturas/
+output/
+tmp/
+*.sqlite3
+*.sqlite3-*
+*.cofre
+*.cofre.tmp
+*.pdf
+*.csv
+!examples/*.csv
+
+# Packaging
+build/
+dist/
+*.log
+
+# Owner-only tests against real invoices
+tests_private/
