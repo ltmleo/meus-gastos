@@ -1,2 +1,2 @@
-__version__ = '1.0.0'
+__version__ = '0.0.1'
 REPOSITORY = 'https://github.com/ltmleo/meus-gastos'
